@@ -1,13 +1,19 @@
-<!-- This will be the base html for my coding portfolio. -->
+<!-- This will be the base html for my coding portfolio. 
+The other webpages will inherit this html to ensure the theme is universal -->
 
 <!DOCTYPE html>
 <html lang ="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>{% block title %}Base page{% endblock %}</title>
+
+    <!-- Load Bootstrap for orginizing webpages-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet'  href='../static/design.css'>
     <script src='main.js'></script>
 </head>
 <body>
