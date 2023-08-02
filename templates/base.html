@@ -15,7 +15,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='../static/design.css'>
-    <script src='main.js'></script>
+    <!-- <script src='main.js'></script> -->
 </head>
 
 <body>
@@ -54,7 +54,23 @@ The other webpages will inherit this html to ensure the theme is universal -->
         </div>
         {% endblock %}
     </div>
-
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid"> <!-- <a class="navbar-brand" href="#">Fixed bottom</a> -->
+            <div class="text-center"> <!-- Grid container -->
+                <div class="container p-4 pb-0"> <!-- Section: Social media -->
+                    <section class="mb-4" id="social"> <!-- Linkedin and github-->
+                        <a class="btn btn-outline-dark btn-floating m-1"
+                            href="https://www.linkedin.com/in/shantel-williams-software-developer/" role="button"><i
+                                class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                        <a class="btn  btn-outline-dark btn-floating m-1" href="https://github.com/Tellysone87"
+                            role="button"><i class="bi bi-github"></i> Github
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
