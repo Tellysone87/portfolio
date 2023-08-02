@@ -2,3 +2,17 @@
 body{
     background-color: lightblue;
 }
+
+#name{
+    color: floralwhite;
+}
+
+#mid_layout{
+    background-color: aliceblue;
+}
+
+
+#professionalTitle{
+    background-color: blue;
+    color: aliceblue;
+}
