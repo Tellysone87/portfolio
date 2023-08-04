@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+<!-- title block -->
+{% block title %}Education page{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- first school -->
+    <div class="row" id="mid_layout">
+        <div class="col-6">
+            Hackbright Academy, Detroit,MI Feb. 2023 - June 2023
+            Software Engineering Fellowship - Accelerated, full stack software
+            engineering program
+        </div>
+        <div class="col-6">
+            <img src="../static/images/HBCertificate.png" alt="Photo of Shantel Williams HackBright Certificate"
+                width="450" height="300" id="HackPhoto">
+        </div>
+    </div>
+    <!-- Second school -->
+    <div class="row" id="mid_layout">
+        <div class="col-6">
+            Macomb Community College, Warren,MI Aug. 2018 - May 2021
+            Associate of Applied Science Computer Programming 2021
+            Overall GPA: 3.6
+        </div>
+        <div class="col-6">
+            <img src="../static/images/macombdiploma.png"
+                alt="Photo of Shantel Williams Data science for all Certificate" width="450" height="300"
+                id="correlationphoto">
+        </div>
+    </div>
+    <!-- Third school -->
+    <div class="row" id="mid_layout">
+        <div class="col-6">
+            Data Science for All by Correlation One, Detroit,MI October 2021 - April 2022
+            Certificate of completion
+            Overall GPA: Honors
+        </div>
+        <div class="col-6">
+            <img src="../static/images/correlationOneCertificate.png"
+                alt="Photo of Shantel Williams Data science for all Certificate" width="450" height="300"
+                id="correlationphoto">
+        </div>
+    </div>
+</div>
+{% endblock %}
