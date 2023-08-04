@@ -19,7 +19,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
 </head>
 
 <body>
-    <!-- Create a nav bar for the different pages -->
+    <!-- Create a nav bar for the heading of different pages -->
     <div class="row">
         <nav class="navbar navbar-expand-lg" style="background-color: #373f51;">
             <div class="container-fluid" id="nav_bar">
@@ -30,16 +30,25 @@ The other webpages will inherit this html to ensure the theme is universal -->
         </nav>
     </div>
 
-    <!-- As a heading -->
-    <nav class="navbar navbar-light bg-light">
+    <!-- As a heading and nav to different pages -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Software engineer</span>
+            <a class="navbar-brand" href="#">Software Developer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="/">About Me</a>
+                    <a class="nav-link" href="/education">Education</a>
+                    <a class="nav-link" href="/project">Projects</a>
+                    <a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contacts</a>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- professional outline -->
-    <div class="row" id="professionalTitle">
-        <H1>Software engineer</H1>
-    </div>
     <div class="row" id="mid_layout">
         <div class="col-8" id="pageDetails">
             {% block content %}
