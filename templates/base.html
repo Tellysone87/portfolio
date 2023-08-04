@@ -21,7 +21,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
 <body>
     <div class="container-fluid">
         <!-- Create a nav bar for the heading of different pages -->
-        <div class="row">
+        <div class="row" id="regular">
             <nav class="navbar navbar-expand-lg" style="background-color: #373f51;">
                 <div class="container-fluid" id="nav_bar">
                     <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="150"
@@ -52,46 +52,45 @@ The other webpages will inherit this html to ensure the theme is universal -->
         </nav>
         <!-- professional outline -->
         <div class="row" id="mid_layout">
-            <div class="col-8" id="pageDetails">
-                {% block content %}
-                <p>Hello, my name is Shantel. I am thrilled to be a part of the computer engineering community.
-                    I started my career in the medical field and Transitioned into IT out of curiosity.
-                    I learned about a Java bootcamp provided by UST Global and decided to apply. I was accepted and that
-                    is
-                    how
-                    my journey started.</p>
-                <p>Today I continue to grow as a developer. I recently graduated a software engineering bootcamp at
-                    HackBright
-                    Academy. I learned full stack web development and other computer science concepts.
-                    Before that, I attended a Data Analysis Bootcamp at Correlation One.
-                    Prior to that, I attended Macomb community college and received an associate degree in Associate of
-                    Applied
-                    Science and graduated with Magna Cum Laude honors.</p>
+            {% block content %}
+            <p>Hello, my name is Shantel. I am thrilled to be a part of the computer engineering community.
+                I started my career in the medical field and Transitioned into IT out of curiosity.
+                I learned about a Java bootcamp provided by UST Global and decided to apply. I was accepted and that
+                is
+                how
+                my journey started.</p>
+            <p>Today I continue to grow as a developer. I recently graduated a software engineering bootcamp at
+                HackBright
+                Academy. I learned full stack web development and other computer science concepts.
+                Before that, I attended a Data Analysis Bootcamp at Correlation One.
+                Prior to that, I attended Macomb community college and received an associate degree in Associate of
+                Applied
+                Science and graduated with Magna Cum Laude honors.</p>
 
-                <p>I enjoy coding and seeing the outcome of my applications. My tech stack includes Python, C#,
-                    JavaScript,
-                    Html, CSS and more. I invite you to check out my portfolio and projects.</p>
-            </div>
+            <p>I enjoy coding and seeing the outcome of my applications. My tech stack includes Python, C#,
+                JavaScript,
+                Html, CSS and more. I invite you to check out my portfolio and projects.</p>
             {% endblock %}
         </div>
+    </div>
+    <div id ="footer">
         <nav class="navbar fixed-bottom navbar-light bg-light">
-            <div class="container-fluid"> <!-- <a class="navbar-brand" href="#">Fixed bottom</a> -->
-                <div class="text-center"> <!-- Grid container -->
-                    <div class="container p-4 pb-0"> <!-- Section: Social media -->
-                        <section class="mb-4" id="social"> <!-- Linkedin and github-->
-                            <a class="btn btn-outline-dark btn-floating m-1"
-                                href="https://www.linkedin.com/in/shantel-williams-software-developer/" role="button"><i
-                                    class="bi bi-linkedin"></i> LinkedIn
-                            </a>
-                            <a class="btn  btn-outline-dark btn-floating m-1" href="https://github.com/Tellysone87"
-                                role="button"><i class="bi bi-github"></i> Github
-                            </a>
-                        </section>
-                    </div>
+            <div class="text-center"> <!-- Grid container -->
+                <div class="container p-4 pb-0"> <!-- Section: Social media -->
+                    <section class="mb-4" id="social"> <!-- Linkedin and github-->
+                        <a class="btn btn-outline-dark btn-floating m-1"
+                            href="https://www.linkedin.com/in/shantel-williams-software-developer/" role="button"><i
+                                class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                        <a class="btn  btn-outline-dark btn-floating m-1" href="https://github.com/Tellysone87"
+                            role="button"><i class="bi bi-github"></i> Github
+                        </a>
+                    </section>
                 </div>
             </div>
         </nav>
     </div>
+
 </body>
 
 

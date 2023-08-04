@@ -1,6 +1,6 @@
 
 body{
-    background-color: lightblue;
+    background-color: white
 }
 
 #name{
@@ -8,10 +8,27 @@ body{
 }
 
 #mid_layout{
-    background-color: lightblue;
+    background-color: white
 }
 
 #professionalTitle{
     background-color: blue;
     color: aliceblue;
+}
+
+img{
+        border: 2px solid black;
+}
+
+.row{
+    margin: 20px;
+}
+
+#regular {
+    margin: 0px;
+    padding: 0;
+}
+
+#footer {
+    
 }
