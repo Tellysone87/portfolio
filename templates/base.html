@@ -7,14 +7,19 @@ The other webpages will inherit this html to ensure the theme is universal -->
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>{% block title %}Base page{% endblock %}</title>
+    <title>{% block title %}About me{% endblock %}</title>
 
     <!-- Load Bootstrap for orginizing webpages-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+    <!-- Adding pyscript for game -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='../static/design.css'>
+
     <!-- <script src='main.js'></script> -->
 </head>
 
@@ -24,8 +29,8 @@ The other webpages will inherit this html to ensure the theme is universal -->
         <div class="row" id="regular">
             <nav class="navbar navbar-expand-lg" style="background-color: #373f51;">
                 <div class="container-fluid" id="nav_bar">
-                    <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="150"
-                        height="100" id="myPhoto">
+                    <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="172.8"
+                        height="230.8" id="myPhoto">
                     <h1 id="name">Shantel Williams</h1>
                 </div>
             </nav>
@@ -76,9 +81,8 @@ The other webpages will inherit this html to ensure the theme is universal -->
                         Html, CSS and more. I invite you to check out my portfolio and projects.</p>
                 </div>
                 <div class="col-6">
-                    <img src="../static/images/smaller Nice photo.jpg"
-                    alt="Photo of Shantel Williams" width="450" height="300"
-                    id="Shantel">
+                    <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="432"
+                        height="576" id="Shantel">
                 </div>
                 {% endblock %}
             </div>

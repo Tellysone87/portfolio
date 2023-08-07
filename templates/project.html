@@ -1,6 +1,77 @@
 {% extends 'base.html' %}
 
 <!-- title block -->
-{% block title %}Project page{% endblock %}
+{% block title %}Projects{% endblock %}
 
-{% block content %}{% endblock %}
+{% block content %}
+<!-- Each project has 3 sections -->
+<div class="row" id="firstProject">
+    <!-- Title and date -->
+    <div class="col-3">
+        <b>
+            <h2>
+                Pack Track
+            </h2>
+            <h3>
+                Apr. 2023 - Current
+            </h3>
+        </b>
+    </div>
+    <!-- highlights and skills -->
+    <div class="col-3">
+        <Ul>
+            <li>Designed and engineered a web application that allows you to track all your packages and view them
+                on a
+                google map.</li>
+            <li>Utilized html, PostgreSQL, JavaScript, CSS, Bootstrap, Ajax, and jinja to successfully develop my
+                full
+                stack application.</li>
+            <li>Learned time management, web development, API integration and backend programming.</li>
+        </Ul>
+    </div>
+    <!-- play game or presentation -->
+    <div class="col-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qA2wuqg6MLQ"
+            title="Pack Track Web Application" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<!-- Start of second project -->
+<div class="row" id="SecondProject">
+    <!-- Title and date -->
+    <div class="col-3">
+        <b>
+            <h2>
+                Under Pressure
+            </h2>
+            <h3>
+                Apr. 2023 - Current
+            </h3>
+        </b>
+    </div>
+    <!-- highlights and skills -->
+    <div class="col-3">
+        <Ul>
+            <li>Designed and engineered a web application that allows you to track all your packages and view them
+                on a
+                google map.</li>
+            <li>Utilized html, PostgreSQL, JavaScript, CSS, Bootstrap, Ajax, and jinja to successfully develop my
+                full
+                stack application.</li>
+            <li>Learned time management, web development, API integration and backend programming.</li>
+        </Ul>
+    </div>
+    <!-- play game or presentation -->
+    <div class="col-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qA2wuqg6MLQ"
+            title="Pack Track Web Application" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+{% endblock %}
