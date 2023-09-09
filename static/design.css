@@ -39,3 +39,30 @@ img{
     width: 432;
     height: 576;
 }
+
+/* Profile tables Css is below */
+#contact_table {
+    color: #373F51;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+   
+    
+}
+
+/* Invert the profile table */
+#contact_table tr { 
+    display: block; 
+    float: left; 
+}
+
+#contact_table th, #contact_table td { 
+    display: block;  
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#contact_table th {
+    text-align: left;
+    background-color:  #58A4B0;
+    color: black;
+}
