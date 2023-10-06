@@ -88,17 +88,19 @@ The other webpages will inherit this html to ensure the theme is universal -->
 
                     <!-- First row if logos -->
                     <div class="row">
+
                         <div class="col-1"> <img src="/static/images/programmingLogos/Python-logo.png"
                                 alt="Photo of python programming language logo" width="75" height="100" id="pythonLogo">
                         </div>
+
                         <div class="col-1 offset-4"> <img src="/static/images/programmingLogos/Clogo.png"
-                            alt="Photo of C Sharp programming language logo" width="75" height="100" id="C#Logo">
+                                alt="Photo of C Sharp programming language logo" width="75" height="100" id="C#Logo">
+                        </div>
+                        <div class="col-1 offset-4"> <img src="/static/images/programmingLogos/js.png"
+                                alt="Photo of javascript programming language logo" width="75" height="100" id="jsLogo">
+                        </div>
                     </div>
-                    <div class="col-1 offset-4"> <img src="/static/images/programmingLogos/js.png"
-                        alt="Photo of javascript programming language logo" width="75" height="100" id="jsLogo">
-                </div>
-                    </div>
-                    
+
                     <!-- second row of logos -->
                     <div class="row">
                         <div class="col-1 offset-2"> <img src="/static/images/programmingLogos/csslogo.png"
@@ -106,8 +108,8 @@ The other webpages will inherit this html to ensure the theme is universal -->
                         </div>
 
                         <div class="col-1 offset-4"> <img src="/static/images/programmingLogos/htmllogo.png"
-                            alt="Photo of html programming language logo" width="75" height="100" id="htmlLogo">
-                    </div>
+                                alt="Photo of html programming language logo" width="75" height="100" id="htmlLogo">
+                        </div>
                     </div>
 
                 </div>
@@ -139,9 +141,9 @@ The other webpages will inherit this html to ensure the theme is universal -->
             </div>
         </nav>
     </div>
+    {% block script %}
+     <!-- link javascript -->
+     <script src="../static/about_effects.js"></script>
+     {% endblock %}
 </body>
-
-<!-- link javascript -->
-<script src="../static/effects.js"></script>
-
 </html>
