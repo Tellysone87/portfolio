@@ -88,31 +88,37 @@ The other webpages will inherit this html to ensure the theme is universal -->
 
                     <!-- First row if logos -->
                     <div class="row">
-
-                        <div class="col-1"> <img src="/static/images/programmingLogos/Python-logo.png"
-                                alt="Photo of python programming language logo" width="75" height="100" id="pythonLogo">
+                        <div class="col-1"> 
+                            <img src="/static/images/programmingLogos/Python-logo.png"
+                                alt="Photo of python programming language logo" width="75" height="100" id="pythonLogo" class="logoGroup">
                         </div>
 
-                        <div class="col-1 offset-4"> <img src="/static/images/programmingLogos/Clogo.png"
-                                alt="Photo of C Sharp programming language logo" width="75" height="100" id="C#Logo">
+                        <div class="col-1 offset-4"> 
+                            <img src="/static/images/programmingLogos/Clogo.png"
+                                alt="Photo of C Sharp programming language logo" width="75" height="100" id="C#Logo" class="logoGroup">
                         </div>
-                        <div class="col-1 offset-4"> <img src="/static/images/programmingLogos/js.png"
-                                alt="Photo of javascript programming language logo" width="75" height="100" id="jsLogo">
+                        <div class="col-1 offset-4"> 
+                            <img src="/static/images/programmingLogos/js.png"
+                                alt="Photo of javascript programming language logo" width="75" height="100" id="jsLogo" class="logoGroup">
                         </div>
                     </div>
 
                     <!-- second row of logos -->
                     <div class="row">
-                        <div class="col-1 offset-2"> <img src="/static/images/programmingLogos/csslogo.png"
-                                alt="Photo of css programming language logo" width="75" height="100" id="cssLogo">
+                        <div class="col-1 offset-2"> 
+                            <img src="/static/images/programmingLogos/csslogo.png"
+                                alt="Photo of css programming language logo" width="75" height="100" id="cssLogo" class="logoGroup">
                         </div>
 
-                        <div class="col-1 offset-4"> <img src="/static/images/programmingLogos/htmllogo.png"
-                                alt="Photo of html programming language logo" width="75" height="100" id="htmlLogo">
+                        <div class="col-1 offset-4"> 
+                            <img src="/static/images/programmingLogos/htmllogo.png"
+                                alt="Photo of html programming language logo" width="75" height="100" id="htmlLogo" class="logoGroup">
                         </div>
                     </div>
 
                 </div>
+
+                <!-- About page photo -->
                 <div class="col-2 offset-1">
                     <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="432"
                         height="576" id="Shantel">
@@ -123,7 +129,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
 
 
     </div>
-    </div>
+
     <div id="footer">
         <nav class="navbar fixed-bottom navbar-light bg-light" style="height:76px;">
             <div class="text-center"> <!-- Grid container -->
@@ -142,8 +148,9 @@ The other webpages will inherit this html to ensure the theme is universal -->
         </nav>
     </div>
     {% block script %}
-     <!-- link javascript -->
-     <script src="../static/about_effects.js"></script>
-     {% endblock %}
+    <!-- link javascript -->
+    <script src="../static/about_effects.js"></script>
+    {% endblock %}
 </body>
+
 </html>
