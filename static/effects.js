@@ -2,19 +2,6 @@
 // Name:Shantel Williams
 // Description: Javascript file to help have some effects and responsive elements
 
-
-let title = document.getElementById("regular")
-
-title.addEventListener("mouseover", function(){
-    let skills = document.getElementById("SkillSet");
-    skills.style.visibility = "visible";
-})
-
-title.addEventListener("mouseout", function(){
-    let skills = document.getElementById("SkillSet");
-    skills.style.visibility = "hidden";
-})
-
 let packSkills = document.getElementById("packVOD");
 
 packSkills.addEventListener("mouseenter", function (){
@@ -48,8 +35,8 @@ function DisplayItems(ele,listnum){
         newItem.innerHTML = listnum[i];
         ele.appendChild(newItem);
         newItem.className ="packItem";
+        newItem.visibility = "hidden"
         i++;
-        // DisplayItems(ele,listnum)
     }  
     
 }

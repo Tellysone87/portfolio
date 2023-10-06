@@ -39,8 +39,6 @@ img{
     color: #373F51;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-   
-    
 }
 
 /* Invert the profile table */
@@ -68,10 +66,15 @@ div#SkillSet.row {
     font-size: 20px;
     height: 50px;
     text-align: center;
-    visibility: hidden;
+   
   
 }
 
 ul {
     padding-left: 0;
+}
+
+#mid_layout {
+    margin-bottom: 40px;
+    width: 1400px;
 }

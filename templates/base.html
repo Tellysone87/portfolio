@@ -25,63 +25,94 @@ The other webpages will inherit this html to ensure the theme is universal -->
         <div class="row" id="regular">
             <nav class="navbar navbar-expand-lg" style="background-color: #373f51;">
                 <div class="container-fluid" id="nav_bar">
-                    <img src="/static/images/smaller Nice photo.jpg" id ="pl" alt="Photo of Shantel Williams" width="172.8"
-                        height="230.8" id="myPhoto">
+                    <img src="/static/images/smaller Nice photo.jpg" id="pl" alt="Photo of Shantel Williams"
+                        width="172.8" height="230.8" id="myPhoto">
                     <h1 id="name">Shantel Williams</h1>
                 </div>
             </nav>
         </div>
 
-    <div class="row" id="SkillSet">
-        Software Engineer | Python | SQL | JavaScript | HTML | CSS | PostgreSQL
-    </div>
+        <div class="row" id="SkillSet">
+            Software Engineer | Python | SQL | JavaScript | HTML | CSS | PostgreSQL
+        </div>
 
 
-    <!-- As a heading and nav to different pages -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid" id="navBar">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="/">About Me</a>
-                    <a class="nav-link" href="/education">Education</a>
-                    <a class="nav-link" href="/project">Projects</a>
-                    <a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contacts</a>
+        <!-- As a heading and nav to different pages -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" id="navBar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="/">About Me</a>
+                        <a class="nav-link" href="/education">Education</a>
+                        <a class="nav-link" href="/project">Projects</a>
+                        <a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contacts</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- professional outline -->
-    <div class="row" id="mid_layout">
-        <div class="row">
-            {% block content %}
-            <div class="col-6">
-                <p>Hello, my name is Shantel. I am thrilled to be a part of the computer engineering community.
-                    I started my career in the medical field and Transitioned into IT out of curiosity.
-                    I learned about a Java bootcamp provided by UST Global and decided to apply. I was accepted and
-                    that
-                    is
-                    how
-                    my journey started.</p>
-                <p>Today I continue to grow as a developer. I recently graduated a software engineering bootcamp at
-                    HackBright
-                    Academy. I learned full stack web development and other computer science concepts.
-                    Before that, I attended a Data Analysis Bootcamp at Correlation One.
-                    Prior to that, I attended Macomb community college and received an associate degree in Associate
-                    of
-                    Applied
-                    Science and graduated with Magna Cum Laude honors.</p>
+        </nav>
+        <!-- professional outline -->
+        <div class="row" id="mid_layout">
+            <div class="row">
+                {% block content %}
+                <div class="col-6">
+                    <div class="row">
+                        <p>Hello, my name is Shantel. I am thrilled to be a part of the computer engineering community.
+                            I started my career in the medical field and Transitioned into IT out of curiosity.
+                            I learned about a Java bootcamp provided by UST Global and decided to apply. I was accepted
+                            and
+                            that
+                            is
+                            how
+                            my journey started.</p>
+                        <p>Today I continue to grow as a developer. I recently graduated a software engineering bootcamp
+                            at
+                            HackBright
+                            Academy. I learned full stack web development and other computer science concepts.
+                            Before that, I attended a Data Analysis Bootcamp at Correlation One.
+                            Prior to that, I attended Macomb community college and received an associate degree in
+                            Associate
+                            of
+                            Applied
+                            Science and graduated with Magna Cum Laude honors.</p>
 
-                <p>I enjoy coding and seeing the outcome of my applications. My tech stack includes Python, C#,
-                    JavaScript,
-                    Html, CSS and more. I invite you to check out my portfolio and projects.</p>
-            </div>
-            <div class="col-6">
-                <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="432"
-                    height="576" id="Shantel">
+                        <p>I enjoy coding and seeing the outcome of my applications. My tech stack includes Python, C#,
+                            JavaScript,
+                            Html, CSS and more. I invite you to check out my portfolio and projects.</p>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-1"> <img src="/static/images/programmingLogos/Python-logo.png"
+                                alt="Photo of python programming language logo" width="75" height="100" id="pythonLogo">
+                        </div>
+                        <div class="col-1 offset-3"> <img src="/static/images/programmingLogos/Clogo.png"
+                            alt="Photo of C Sharp programming language logo" width="75" height="100" id="C#Logo">
+                    </div>
+                    <div class="col-1 offset-3"> <img src="/static/images/programmingLogos/js.png"
+                        alt="Photo of javascript programming language logo" width="75" height="100" id="jsLogo">
+                </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-1 offset-2"> <img src="/static/images/programmingLogos/csslogo.png"
+                                alt="Photo of css programming language logo" width="75" height="100" id="cssLogo">
+                        </div>
+
+                        <div class="col-1 offset-3"> <img src="/static/images/programmingLogos/htmllogo.png"
+                            alt="Photo of html programming language logo" width="75" height="100" id="htmlLogo">
+                    </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="432"
+                        height="576" id="Shantel">
+                </div>
             </div>
             {% endblock %}
         </div>
@@ -90,9 +121,9 @@ The other webpages will inherit this html to ensure the theme is universal -->
     </div>
     </div>
     <div id="footer">
-        <nav class="navbar fixed-bottom navbar-light bg-light">
+        <nav class="navbar fixed-bottom navbar-light bg-light" style="height:76px;">
             <div class="text-center"> <!-- Grid container -->
-                <div class="container p-4 pb-0"> <!-- Section: Social media -->
+                <div class="container p-3 pb-0"> <!-- Section: Social media -->
                     <section class="mb-4" id="social"> <!-- Linkedin and github-->
                         <a class="btn btn-outline-dark btn-floating m-1"
                             href="https://www.linkedin.com/in/shantel-williams-software-developer/" role="button"><i
@@ -108,7 +139,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
     </div>
 </body>
 
-  <!-- link javascript -->
-  <script src="../static/effects.js"></script> 
+<!-- link javascript -->
+<script src="../static/effects.js"></script>
 
 </html>
