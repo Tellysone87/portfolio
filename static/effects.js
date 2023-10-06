@@ -2,8 +2,10 @@
 // Name:Shantel Williams
 // Description: Javascript file to help have some effects and responsive elements
 
-let packSkills = document.getElementById("packVOD");
+let packSkills = document.getElementById("packVOD");// grabs pack yt video player
 
+
+// display the bullet points of pack track once user hovers the video
 packSkills.addEventListener("mouseenter", function (){
 
     let highlight = ["Designed and engineered a web application that allows you to track all your packages and view them on a google map.",
@@ -19,6 +21,7 @@ packSkills.addEventListener("mouseenter", function (){
 
 })
 
+// display the bullet points of pack track once user removes mouse off the video
 packSkills.addEventListener("mouseout", function (){
 
     let listI = document.getElementsByClassName("packItem");
@@ -28,6 +31,8 @@ packSkills.addEventListener("mouseout", function (){
 
 })
 
+
+// funvtion to take an element and list and create list items in the element
 function DisplayItems(ele,listnum){
    
     while (i < listnum.length){
@@ -41,8 +46,10 @@ function DisplayItems(ele,listnum){
     
 }
 
+// Fucntion to remove an elements children
 const removeChilds = (parent) => {
     while (parent.lastChild) {
         parent.removeChild(parent.lastChild);
     }
 };
+
