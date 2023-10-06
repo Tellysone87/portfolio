@@ -19,15 +19,16 @@ The other webpages will inherit this html to ensure the theme is universal -->
 </head>
 
 <body>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <div class="container-fluid">
         <!-- Create a nav bar for the heading of different pages -->
         <div class="row" id="regular">
             <nav class="navbar navbar-expand-lg" style="background-color: #373f51;">
                 <div class="container-fluid" id="nav_bar">
+                    {% block heading %}
                     <img src="/static/images/smaller Nice photo.jpg" id="pl" alt="Photo of Shantel Williams"
-                        width="172.8" height="230.8" id="myPhoto">
-                    <h1 id="name">Shantel Williams</h1>
+                        width="170" height="170" id="myPhoto">
+                    <h1 class="name">Shantel Williams</h1>
+                    {% endblock %}
                 </div>
             </nav>
         </div>
@@ -119,9 +120,9 @@ The other webpages will inherit this html to ensure the theme is universal -->
                 </div>
 
                 <!-- About page photo -->
-                <div class="col-2 offset-1">
-                    <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="432"
-                        height="576" id="Shantel">
+                <div class="col-3">
+                    <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="500"
+                        height="500" id="Shantel">
                 </div>
             </div>
             {% endblock %}
@@ -150,6 +151,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
     {% block script %}
     <!-- link javascript -->
     <script src="../static/about_effects.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     {% endblock %}
 </body>
 
