@@ -68,6 +68,7 @@ div#SkillSet.row {
     font-size: 20px;
     height: 50px;
     text-align: center;
+    visibility: hidden;
   
 }
 

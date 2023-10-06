@@ -2,21 +2,60 @@
 // Name:Shantel Williams
 // Description: Javascript file to help have some effects and responsive elements
 
-const title = document.getElementById("#Shantel");
 
+let title = document.getElementById("regular")
 
-title.addEventListener(onmouseover, function (){
-    const skill = document.getElementById("SkillSet");
-    skill.style.visibility = "Visible";
-    // const skills = document.createElement("div")
-    // skills.className = "row"
-    // skills.innerHTML = "Software Engineer | Python | SQL | JavaScript | HTML | CSS | PostgreSQL"
-    // skills.id = "SkillSet"
-    // title.appendChild(skills);
+title.addEventListener("mouseover", function(){
+    let skills = document.getElementById("SkillSet");
+    skills.style.visibility = "visible";
 })
 
-title.addEventListener(mouseout, function (){
-    const skills = document.getElementById("SkillSet")
-    skills.visibility = "hidden";
+title.addEventListener("mouseout", function(){
+    let skills = document.getElementById("SkillSet");
+    skills.style.visibility = "hidden";
 })
 
+let packSkills = document.getElementById("packVOD");
+
+packSkills.addEventListener("mouseenter", function (){
+
+    let highlight = ["Designed and engineered a web application that allows you to track all your packages and view them on a google map.",
+     "Utilized html, PostgreSQL, JavaScript, CSS, Bootstrap, Ajax, and jinja to successfully develop my fullstack application.", 
+     "Learned time management, web development, API integration and backend programming."];
+
+    let unorderList = document.getElementById("packListItems"); 
+
+    i = 0 // Set index to zero
+
+    DisplayItems(unorderList, highlight);
+
+
+})
+
+packSkills.addEventListener("mouseout", function (){
+
+    let listI = document.getElementsByClassName("packItem");
+    let ulist = document.getElementById("packListItems");
+
+    removeChilds(ulist)
+
+})
+
+function DisplayItems(ele,listnum){
+   
+    while (i < listnum.length){
+        newItem = document.createElement("li");
+        newItem.innerHTML = listnum[i];
+        ele.appendChild(newItem);
+        newItem.className ="packItem";
+        i++;
+        // DisplayItems(ele,listnum)
+    }  
+    
+}
+
+const removeChilds = (parent) => {
+    while (parent.lastChild) {
+        parent.removeChild(parent.lastChild);
+    }
+};
