@@ -23,7 +23,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
         <!-- Create a nav bar for the heading of different pages -->
         <div class="row" id="regular">
             <nav class="navbar navbar-expand-lg" style="background-color: #373f51;">
-                <div class="container-fluid" id="nav_bar">
+                <!-- <div class="container-fluid" id="nav_bar"> -->
                     {% block heading %}
                     <img src="/static/images/smaller Nice photo.jpg" id="pl" alt="Photo of Shantel Williams"
                         width="170" height="170" id="myPhoto">
@@ -41,7 +41,6 @@ The other webpages will inherit this html to ensure the theme is universal -->
 
         <!-- As a heading and nav to different pages -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid" id="navBar">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -61,7 +60,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
         <div class="row" id="mid_layout">
             <div class="row">
                 {% block content %}
-                <div class="col-9">
+                <div class="col-7">
                     <div class="row">
                         <p>Hello, my name is Shantel. I am thrilled to be a part of the computer engineering community.
                             I started my career in the medical field and Transitioned into IT out of curiosity.
@@ -121,8 +120,8 @@ The other webpages will inherit this html to ensure the theme is universal -->
 
                 <!-- About page photo -->
                 <div class="col-3">
-                    <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="500"
-                        height="500" id="Shantel">
+                    <img src="../static/images/smaller Nice photo.jpg" alt="Photo of Shantel Williams" width="400"
+                        height="400" id="Shantel">
                 </div>
             </div>
             {% endblock %}
@@ -132,7 +131,7 @@ The other webpages will inherit this html to ensure the theme is universal -->
     <div id="footer">
         <nav class="navbar fixed-bottom navbar-light bg-light" style="height:76px;">
             <div class="text-center"> <!-- Grid container -->
-                <div class="container p-3 pb-0"> <!-- Section: Social media -->
+                <!-- <div class="container p-3 pb-0"> Section: Social media -->
                     <section class="mb-4" id="social"> <!-- Linkedin and github-->
                         <a class="btn btn-outline-dark btn-floating m-1"
                             href="https://www.linkedin.com/in/shantel-williams-software-developer/" role="button"><i
