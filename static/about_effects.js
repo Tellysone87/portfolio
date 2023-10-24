@@ -19,6 +19,15 @@ pythonLogo.forEach(function (img) {
         htmlLogo: ["Pack Track"]
     }
 
+    langauge = {
+        // { logo html element ID : translated}
+        pythonLogo: "Python",
+        CLogo: "C-Sharp",
+        jsLogo: "Javascript",
+        cssLogo: "CSS",
+        htmlLogo: "HTML"
+    }
+
     // adding event listener to each logo img for mouse enter event
     img.addEventListener("mouseenter", function () {
         img.style.border = "Thick solid black"; // Changing border, border width and getting that particular image id
@@ -36,7 +45,7 @@ pythonLogo.forEach(function (img) {
 
          //////////////////////////////////////create title for table ////////////////////////
          const table_title = document.createElement("h6");
-         table_title.innerText = `Projects utilizing ${define_logo}`;
+         table_title.innerText = `Projects utilizing ${langauge[define_logo]}`;
          newRow.append(table_title);
 
         /////////////////////////// Create table /////////////////////////////////////////////
