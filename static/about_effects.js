@@ -1,5 +1,5 @@
 // Date created: 10/4/2023
-// last updated 10/10/2023
+// last updated 10/24/2023
 // Author: Shantel williams
 // File Name:about_effects.js
 // Connected to base.html
@@ -60,7 +60,7 @@ pythonLogo.forEach(function (img) {
         const table_row = document.createElement("tr"); // create a table row
         table_row.id ="the_row";
 
-        //////////////////////// Create header ///////////////////////////////////////
+        //////////////////////// Create table header ///////////////////////////////////////
         const header = document.createElement("th"); // create a table header
         header.innerText ="Name";
         header.id ="header"
